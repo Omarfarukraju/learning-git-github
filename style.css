@@ -1,0 +1,128 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+    }
+    
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    div {
+        margin: 7px 0;
+    }
+    
+    header {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    header img {
+        width: 100%;
+    }
+    
+    nav {
+        background: #e7e7e7;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        background: #fff;
+        width: fit-content;
+        padding: 5px;
+        border: 2px solid #e7e7e7;
+        list-style-type: none;
+        display: flex;
+        background-color: #ddd;
+        width: fit-content;
+        border: none;
+        color: black;
+        padding: 5PX;
+        text-align: center;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    nav ul li a:hover {
+        background-color: #9c9c9c;
+        color: rgb(21, 134, 11);
+    }
+    
+    main h2 {
+        color: #e0b011;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #9c9c9c;
+    }
+    
+    main form {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .left-form,
+    .right-form {
+        width: 100%;
+    }
+    
+    main form input,
+    main form select#district,
+    main form select#course,
+    main form select#id,
+    main form select#home-district,
+    main form select#upazila,
+    main form select#education {
+        width: 100%;
+        font-size: 16px;
+        border: 2px solid #e7e7e7;
+        padding: 4px;
+        border-radius: 2px;
+    }
+    
+    main form input[type="radio"] {
+        width: auto;
+    }
+    fieldset {
+        border: 2px solid #e7e7e7;
+        border-radius: 2px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    fieldset label {
+        display: block;
+    }
+    
+    fieldset select {
+        width: 100%;
+        font-size: 16px;
+        border: 3px solid #e7e7e7;
+        padding: 4px;
+        border-radius: 2px;
+    }
+    
+    fieldset .day,
+    fieldset .month,
+    fieldset .year {
+        width: 100%;
+    }
+    
+    input[type="submit"] {
+        width: 120px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }

@@ -1,16 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>hello</h1>
-    <img src="./omar faruk raju.jpg" alt="omar">
-    <!-- javascrev -->
-        
-    <script src="app.js"></script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <img src="./assets/images/ledp.jpg" alt="" />
+            <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course Module-2020</a></li>
+                <li><a href="#">Class Schedule</a></li>
+                <li><a href="#">Success Story</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Student Registration Form NOAKHALI</h2>
+
+            <h3>Please enter relevent information</h3>
+            <p>Mandatory Field*</p>
+            <form>
+            <div class="left-form">
+                <div class="select-district">
+                <label for="district"
+                    >District(<small
+                    >Institute District: Where you want to do your course</small
+                    >)*</label
+                >
+                <select id="district">
+                    <option disabled selected>--Select One--</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="kishorganj">Kishoreganj</option>
+                    <option value="gazipur">Gazipur</option>
+                </select>
+                </div>
+                <div class="select-course">
+                <label for="course">Course*</label>
+                <select id="course">
+                    <option disabled selected>--Select One--</option>
+                    <option value="web">Web Application & Development</option>
+                    <option value="graphics">Graphics Design</option>
+                    <option value="digital marketing">Digital Marketing</option>
+                </select>
+                </div>
+                <div class="student-name">
+                <label for="student-name">Student Name*</label>
+                <input type="text" />
+                </div>
+                <div class="father-name">
+                <label for="father-name">Father's Name*</label>
+                <input type="text" />
+                </div>
+                <div class="mother-name">
+                <label for="mother-name">Mother's Name*</label>
+                <input type="text" />
+                </div>
+                <fieldset>
+                <legend>Date of Birth*</legend>
+                <div class="day">
+                    <label for="day">Day:</label>
+                    <select id="day">
+                    <option>Day</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    </select>
+                </div>
+                <div class="month">
+                    <label for="month">Month:</label>
+                    <select id="month">
+                    <option>Month</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <label for="year">Year:</label>
+                    <select id="year">
+                    <option>Year</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    </select>
+                </div>
+                </fieldset>
+                <div class="gender">
+                <span>Gender*</span>
+                <input name="gender" type="radio" />
+                <label for="gender">Male</label>
+                <input name="gender" type="radio" />
+                <label for="gender">Female</label>
+                </div>
+                <div class="email">
+                <label for="email">Email*</label>
+                <input type="email" />
+                <small>(e.g: example@gmail.com)</small>
+                </div>
+                <div class="phone">
+                <label for="phone">Phone (Must be 11 Digits)*</label>
+                <input type="text" />
+                <small>(e.g: 01522454585)</small>
+                </div>
+            </div>
+            <div class="right-form">
+                <div class="identification">
+                <label for="id">Indentification Type*</label>
+                <select id="id">
+                    <option>--Select One--</option>
+                    <option>Birht Registration</option>
+                    <option>National ID card</option>
+                </select>
+                </div>
+                <div class="home-district">
+                <label for="home-district">Home District*</label>
+                <select id="home-district">
+                    <option>--Select One--</option>
+                    <option>Kishoreganj</option>
+                    <option>Gazipur</option>
+                </select>
+                </div>
+                <div class="upazila">
+                <label for="upazila">Upazila*</label>
+                <select id="upazila">
+                    <option>--Select One--</option>
+                    <option>Bajitpur</option>
+                    <option>Nikli</option>
+                </select>
+                </div>
+                <div class="village">
+                <label for="village"
+                    >Village/House No./Road No./Other Alternative*</label
+                >
+                <input id="village" type="text" />
+                </div>
+                <div class="post">
+                <label for="post">Post Office*</label>
+                <input id="post" type="text" />
+                </div>
+                <div class="education">
+                <label for="education"
+                    >Educational Qualification* <small>(Higher Level)</small></label
+                >
+                <select id="education">
+                    <option>--Select One--</option>
+                    <option>Higher Secondary</option>
+                    <option>Bechelor</option>
+                </select>
+                </div>
+                <div class="computer">
+                <span>Have any computer?*</span>
+                <input name="computer" type="radio" />
+                <label for="computer">Yes</label>
+                <input name="computer" type="radio" />
+                <label for="computer">No</label>
+                </div>
+                <div class="photo">
+                <label for="picture">Picture*</label>
+                <input id="picture" type="file" />
+                </div>
+                <div class="sign">
+                <label for="sign">Signature*</label>
+                <input id="sign" type="file" />
+                </div>
+                <input type="submit" value="Submit Data"></input>
+            </div>
+            </form>
+        </main>
+        </div>
+    </body>
+    </html>
